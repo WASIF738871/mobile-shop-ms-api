@@ -8,19 +8,14 @@ const env = require("./config/env");
 const errorMiddleware = require("./middleware/error.middleware");
 const logger = require("./utils/logger");
 const corsOptions = require("./config/cors-options");
+const path = require("path");
 
 const app = express();
 
+app.use(cors(corsOptions));
+
 // Security Middlewares
 app.use(helmet());
-
-app.use((req, res, next) => {
-  console.log("➡️ Request:", req.method, req.originalUrl);
-  console.log("➡️ Origin:", req.headers.origin);
-  next();
-});
-
-app.use(cors(corsOptions));
 
 // Rate Limiting
 const limiter = rateLimit({
@@ -61,6 +56,20 @@ app.use("/api/repairs", require("./routes/repair.routes"));
 app.use("/api/roles", require("./routes/role.routes"));
 app.use("/api/inventory", require("./routes/inventory.routes"));
 app.use("/api/reports", require("./routes/report.routes"));
+
+// =========================
+// REACT BUILD
+// =========================
+
+if (env.nodeEnv === "production") {
+  const buildPath = path.join(__dirname, "build");
+
+  app.use(express.static(buildPath));
+
+  app.get("/{*splat}", (req, res) => {
+    res.sendFile(path.join(buildPath, "index.html"));
+  });
+}
 
 // Error Handling Middleware
 app.use(errorMiddleware);

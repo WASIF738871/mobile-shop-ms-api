@@ -4,9 +4,6 @@ const allowedOrigins = env.clientUrls || [];
 
 const corsOptions = {
   origin: (origin, callback) => {
-    console.log("🔥 CORS CALLBACK");
-    console.log("Request Origin:", origin);
-
     if (!origin) {
       return callback(null, true);
     }

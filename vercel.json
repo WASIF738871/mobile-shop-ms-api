@@ -16,10 +16,6 @@
       "dest": "/build/assets/$1"
     },
     {
-      "src": "/(.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|webp))",
-      "dest": "/build/$1"
-    },
-    {
       "src": "/(.*)",
       "dest": "server.js"
     }

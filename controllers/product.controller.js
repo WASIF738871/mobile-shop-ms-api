@@ -3,7 +3,7 @@ const { sendResponse } = require('../utils/response');
 
 const getProducts = async (req, res, next) => {
   try {
-    const products = await productService.getProducts(req.query.category);
+    const products = await productService.getProducts(req.query.category, req.query.status);
     sendResponse(res, 200, 'Products retrieved successfully', products);
   } catch (error) {
     next(error);

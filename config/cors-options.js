@@ -9,11 +9,9 @@ const corsOptions = {
     }
 
     if (allowedOrigins.includes(origin)) {
-      console.log("✅ CORS ALLOWED:", origin);
       return callback(null, true);
     }
 
-    console.log("❌ CORS BLOCKED:", origin);
 
     return callback(new Error(`CORS Policy: ${origin} is not authorized in ${env.nodeEnv} mode.`));
   },

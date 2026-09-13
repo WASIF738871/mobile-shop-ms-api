@@ -7,23 +7,20 @@ const rateLimit = require("express-rate-limit");
 const env = require("./config/env");
 const errorMiddleware = require("./middleware/error.middleware");
 const logger = require("./utils/logger");
+const corsOptions = require("./config/cors-options");
 
 const app = express();
 
-const corsOptions = {
-  origin: env.clientUrl,
-  credentials: true,
-  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-};
-app.use(cors(corsOptions));
-// app.use(cors({
-//   origin: env.clientUrl,
-//   credentials: true,
-// }));
-
 // Security Middlewares
 app.use(helmet());
+
+app.use((req, res, next) => {
+  console.log("➡️ Request:", req.method, req.originalUrl);
+  console.log("➡️ Origin:", req.headers.origin);
+  next();
+});
+
+app.use(cors(corsOptions));
 
 // Rate Limiting
 const limiter = rateLimit({

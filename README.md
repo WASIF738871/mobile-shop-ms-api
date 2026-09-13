@@ -1,1 +1,1 @@
-# mobile-shop-ms-api
+# ms-api

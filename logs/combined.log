@@ -138,3 +138,81 @@
 {"level":"info","message":"Server running in development mode on port 5001","service":"mobile-shop-ms","timestamp":"2026-09-12 22:26:48"}
 {"level":"info","message":"Connected to MongoDB: mobile_shop_ms","service":"mobile-shop-ms","timestamp":"2026-09-12 22:30:44"}
 {"level":"info","message":"Server running in development mode on port 5001","service":"mobile-shop-ms","timestamp":"2026-09-12 22:30:44"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 10:48:21"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"mobile-shop-ms","timestamp":"2026-09-13 10:48:21"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:35"}
+{"level":"info","message":"Permissions seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:35"}
+{"level":"info","message":"Roles seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:35"}
+{"level":"info","message":"Super Admin seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:35"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:40"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"mobile-shop-ms","timestamp":"2026-09-13 10:51:40"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:15"}
+{"level":"info","message":"Permissions seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:15"}
+{"level":"info","message":"Roles seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:15"}
+{"level":"info","message":"Super Admin seeded successfully.","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:15"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:20"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"mobile-shop-ms","timestamp":"2026-09-13 10:53:20"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 11:14:18"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"mobile-shop-ms","timestamp":"2026-09-13 11:14:18"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"mobile-shop-ms","timestamp":"2026-09-13 11:14:32"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"mobile-shop-ms","timestamp":"2026-09-13 11:14:32"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:17:24"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:17:24"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:24:29"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:24:29"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:28:32"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:28:32"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:30:48"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:30:48"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:31:00"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:31:00"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:31:13"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:31:13"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:32:37"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:32:37"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:32:50"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:32:50"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:33:32"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:33:32"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:33:40"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:33:40"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:33:53"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:33:53"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:35:09"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:35:09"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:39:15"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:39:15"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:39:56"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:39:56"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:44:15"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:44:15"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:44:23"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:44:23"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:44:33"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:44:33"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:46:36"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:46:36"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:46:48"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:46:48"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:48:22"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:48:22"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:50:19"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:50:19"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:50:38"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:50:38"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:53:30"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:53:30"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:53:56"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:53:56"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:54:05"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:54:05"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:54:24"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:54:24"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:55:24"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:55:24"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:56:39"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:56:39"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 11:59:21"}
+{"level":"info","message":"Server running in development mode on port 5000","service":"ms-api","timestamp":"2026-09-13 11:59:21"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-13 12:03:48"}
+{"level":"info","message":"Server running in development mode on port 5001","service":"ms-api","timestamp":"2026-09-13 12:03:48"}

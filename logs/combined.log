@@ -508,3 +508,7 @@
 {"level":"info","message":"Server running in development mode on port 5004","service":"ms-api","timestamp":"2026-09-14 10:58:00"}
 {"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-14 10:58:05"}
 {"level":"info","message":"Server running in development mode on port 5004","service":"ms-api","timestamp":"2026-09-14 10:58:05"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-14 11:25:39"}
+{"level":"info","message":"Server running in development mode on port 5004","service":"ms-api","timestamp":"2026-09-14 11:25:39"}
+{"level":"info","message":"Connected to MongoDB: ms-db","service":"ms-api","timestamp":"2026-09-14 11:25:48"}
+{"level":"info","message":"Server running in development mode on port 5004","service":"ms-api","timestamp":"2026-09-14 11:25:48"}

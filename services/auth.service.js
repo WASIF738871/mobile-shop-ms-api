@@ -6,26 +6,56 @@ const { ObjectId } = require("mongodb"); // Added
 
 exports.login = async (email, password) => {
   const user = await userRepository.findByEmail(email);
+
   if (!user || user.status !== "ACTIVE") {
-    throw { statusCode: 401, message: "Invalid credentials or account inactive" };
+    throw {
+      statusCode: 401,
+      message: "Invalid credentials or account inactive",
+    };
   }
 
   const isPasswordValid = await comparePassword(password, user.passwordHash);
+
   if (!isPasswordValid) {
-    throw { statusCode: 401, message: "Invalid credentials" };
+    throw {
+      statusCode: 401,
+      message: "Invalid credentials",
+    };
   }
 
-  // Fetch permissions
+  // Update last login time
+  const lastLoginAt = new Date();
+
   const db = getDB();
+
+  await db.collection("users").updateOne(
+    { _id: user._id },
+    {
+      $set: {
+        lastLoginAt,
+      },
+    },
+  );
+
+  // Fetch permissions
   const roles = await db
     .collection("roles")
-    .find({ _id: { $in: (user.roleIds || []).map((id) => new ObjectId(id)) } })
+    .find({
+      _id: {
+        $in: (user.roleIds || []).map((id) => new ObjectId(id)),
+      },
+    })
     .toArray();
+
   const permissionIds = [...new Set(roles.flatMap((role) => role.permissionIds || []))];
+
   const permissions = await db
     .collection("permissions")
-    .find({ _id: { $in: permissionIds } })
+    .find({
+      _id: { $in: permissionIds },
+    })
     .toArray();
+
   const permissionNames = permissions.map((p) => p.name);
 
   const accessToken = generateAccessToken(user);
@@ -34,7 +64,15 @@ exports.login = async (email, password) => {
   // Omit sensitive data
   const { passwordHash, ...userWithoutPassword } = user;
 
-  return { user: userWithoutPassword, accessToken, refreshToken, permissions: permissionNames };
+  // Return updated login time as well
+  userWithoutPassword.lastLoginAt = lastLoginAt;
+
+  return {
+    user: userWithoutPassword,
+    accessToken,
+    refreshToken,
+    permissions: permissionNames,
+  };
 };
 
 exports.refresh = async (refreshToken) => {

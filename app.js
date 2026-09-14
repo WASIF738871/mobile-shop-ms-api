@@ -23,7 +23,7 @@ const limiter = rateLimit({
   max: 100, // Limit each IP to 100 requests per windowMs
   message: "Too many requests from this IP, please try again after 15 minutes",
 });
-app.use("/api/", limiter);
+// app.use("/api/", limiter);
 
 // Basic Middlewares
 app.use(express.json());
@@ -43,7 +43,7 @@ app.get("/health", (req, res) => {
 });
 
 // Routes
-app.use("/api/auth", require("./routes/auth.routes"));
+app.use("/api/auth", limiter, require("./routes/auth.routes"));
 app.use("/api/users", require("./routes/user.routes"));
 app.use("/api/sales", require("./routes/sales.routes"));
 app.use("/api/products", require("./routes/product.routes"));
